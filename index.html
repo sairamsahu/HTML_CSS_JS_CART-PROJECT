@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoe Offer Selection</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <span class="line"></span>
+      <h3>YAY IT'S BAGO</h3>
+      <span class="line"></span>
+    </div>
+
+    <div class="box" id="box1">
+      <label>
+        <input type="radio" name="offer" value="offer1" onchange="calculateTotal()"> Running Shoe: 1 Pair 50% Off
+      </label>
+      <div class="offer-info">Price: $50.00 | 50% Off</div>
+      <div class="dropdown-container" id="dropdown1">
+        <div class="dropdown-row">
+          <select id="size1a" onchange="calculateTotal()">
+            <option value="">Size 1</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <select id="color1a" onchange="calculateTotal()">
+            <option value="">Color 1</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+        <div class="dropdown-row">
+          <select id="size1b" onchange="calculateTotal()">
+            <option value="">Size 2</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <select id="color1b" onchange="calculateTotal()">
+            <option value="">Color 2</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="box" id="box2">
+      <label>
+        <input type="radio" name="offer" value="offer2" onchange="calculateTotal()"> Casual Shoe: 2 Pairs 40% Off
+      </label>
+      <div class="offer-info">Price: $120.00 | 40% Off</div>
+      <div class="dropdown-container" id="dropdown2">
+        <div class="dropdown-row">
+          <select id="size2a" onchange="calculateTotal()">
+            <option value="">Size 1</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <select id="color2a" onchange="calculateTotal()">
+            <option value="">Color 1</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+        <div class="dropdown-row">
+          <select id="size2b" onchange="calculateTotal()">
+            <option value="">Size 2</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <select id="color2b" onchange="calculateTotal()">
+            <option value="">Color 2</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer 3 -->
+    <div class="box" id="box3">
+      <label>
+        <input type="radio" name="offer" value="offer3" onchange="calculateTotal()"> Sports Shoe: 2 Pairs 60% Off
+      </label>
+      <div class="offer-info">Price: $80.00 | 60% Off</div>
+      <div class="dropdown-container" id="dropdown3">
+        <div class="dropdown-row">
+          <select id="size3a" onchange="calculateTotal()">
+            <option value="">Size 1</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <select id="color3a" onchange="calculateTotal()">
+            <option value="">Color 1</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+        <div class="dropdown-row">
+          <select id="size3b" onchange="calculateTotal()">
+            <option value="">Size 2</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <select id="color3b" onchange="calculateTotal()">
+            <option value="">Color 2</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-row">
+      <span class="free-delivery">Free Delivery</span>
+      <span class="total" id="total">Total: $0.00</span>
+    </div>
+
+    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
